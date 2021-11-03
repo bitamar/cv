@@ -1,23 +1,15 @@
 import React from "react";
-// import bg from "./penrose.svg";
+import bg from "./penrose.svg";
+import itamar from "./itamar.jpeg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/*<img src={bg} className="App-logo" alt="logo" />*/}
-      </header>
-
       <div className="column contact">
         <div className="ui card">
           <div className="clearfix">
-            <img
-              width="150"
-              height="150"
-              src="./CV _ Itamar Bar-Lev_files/itamar.jpg"
-              alt="Itamar Bar-Lev"
-            />
+            <img width="188" height="188" src={itamar} alt="Itamar Bar-Lev" />
             <h2 className="title narrow-only">Itamar Bar-Lev</h2>
             <div className="extra content">
               <div className="ui list">
@@ -284,13 +276,7 @@ function App() {
           </div>
         </div>
       </div>
-      <img
-        width="150"
-        height="150"
-        id="background"
-        src="./CV _ Itamar Bar-Lev_files/penrose.svg"
-        alt=""
-      />
+      <img id="background" src={bg} alt="🌟" />
     </div>
   );
 }
