@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+/*@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin");*/
+
+html {
+  font-size: 16px;
+  min-width: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,
+h2 {
+  line-height: 1.3em;
+  font-weight: bold;
+  padding: 0;
+}
+
+.title {
+  margin: 0;
+  min-height: 1rem;
+  color: #444;
+  font-size: 2em;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  color: #424141;
+  font-size: 1.7rem;
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.4em;
+}
+
+a {
+  text-decoration: none;
+  color: #424141;
+  font-weight: bold;
+}
+a:hover {
+  color: lightpink !important;
+  text-decoration: none;
+}
+
+.ui.list {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;
+  font-size: 1em;
+}
+.ui.list:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.ui.list:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.ui.list > .item {
+  display: list-item;
+  table-layout: fixed;
+  list-style: none outside;
+  line-height: 1.14em;
+  margin-top: 16px;
+}
+
+.ui.list > .item:first-child {
+  padding-top: 0;
+}
+.ui.list > .item:last-child {
+  padding-bottom: 0;
+}
+.ui.list > .item .content {
+  line-height: 1.14285714em;
+}
+.ui.list > .item .icon + .content {
+  display: table-cell;
+  padding: 0 0 0 0.5em;
+  vertical-align: top;
+}
+.ui.list > .item .header {
+  display: block;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.ui.list > .item .description {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+p {
+  margin-bottom: 0.15em;
+  line-height: 23px;
+  text-align: justify;
+}
+
+.ui.segment {
+  position: relative;
+  margin: 1rem 0;
+  padding: 1em 1em;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.55);
+}
+.ui.segment .item {
+  margin-top: 10px;
+}
+
+.ui.segment .content.indented {
+  padding-left: 36px;
+}
+.ui.segment .summary {
+  line-height: 25px;
+}
+.ui.segment .summary.workplace a {
+  color: #440017;
+  font-size: 18px;
+}
+.ui.segment:first-child {
+  margin-top: 0;
+}
+.ui.segment:last-child {
+  margin-bottom: 0;
+}
+
+.ui.card {
+  margin: 0 auto;
+}
+.ui.card:first-child {
+  margin-top: 0;
+}
+.ui.card:last-child {
+  margin-bottom: 0;
+}
+.ui.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(30%);
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.ui.card .content {
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+.ui.card .extra {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: rgba(0, 0, 0, 0.4);
+}
+.ui.card .extra > div {
+  margin-top: 0.4em;
+}
+.ui.card .extra > div:first-child {
+  margin-top: 0;
+}
+
+#background {
+  width: 100%;
+  min-width: 400px;
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  z-index: -100;
+  transition: top 0.5s;
+}
+
+.container {
+  padding-top: 3em;
+}
+
+.date {
+  display: inline-block;
+  float: right;
+  font-weight: 400;
+  font-size: 0.85714286em;
+  font-style: normal;
+  margin: 0 0 0 0.5em;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.role {
+  margin: 0 0 10px;
+  font-weight: bold;
+  display: block;
+  line-height: 25px;
+}
+
+span.category {
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  margin-top: 40px;
+}
+.column.contact {
+  width: 184px;
+  margin-left: 10%;
+}
+.column.details {
+  width: 520px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .column.contact {
+    margin-left: 10px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1001px) {
+  .narrow-only {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 1000px) {
+  body {
+    padding: 10px;
   }
+
+  .column {
+    float: none;
+  }
+  .column.contact {
+    margin: 0 auto;
+    width: auto;
+    max-width: 520px;
+  }
+
+  .column.contact .ui.card .extra.content {
+    clear: none;
+    margin-left: 10px;
+    float: left;
+    width: 300px;
+    font-size: 11px;
+  }
+  .column.contact .ui.card .item {
+    display: inline-block;
+    padding: 0;
+    margin-right: 15px;
+    min-width: 60px;
+  }
+
+  .column.contact .ui.card .item a {
+    /*line-height: 25px;*/
+  }
+
+  .column.contact .ui.card img {
+    max-width: 16%;
+    float: left;
+  }
+  .column.contact .ui.card .title {
+    float: left;
+    margin-left: 10px;
+    font-size: 27px;
+  }
+  .column.details {
+    width: auto;
+    max-width: 520px;
+    margin: 10px auto 0;
+  }
+
+  #background {
+    left: 0;
+  }
+
+  .wide-only {
+    display: none;
+  }
+}
+@media print {
+  #background {
+    display: none;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .column.details {
+    width: 930px;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
