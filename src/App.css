@@ -1,8 +1,3 @@
-html {
-  font-size: 16px;
-  min-width: 400px;
-}
-
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 1.4em;
@@ -10,25 +5,23 @@ body {
   margin: 0;
 }
 
-h1,
-h2 {
+h1 {
   line-height: 1.3em;
-  font-weight: bold;
   padding: 0;
   margin: 0;
   min-height: 1rem;
   color: #444;
-  float: left;
   font-size: 32px;
 }
 
-h2 {
+h1.narrow-only {
+  float: left;
   margin-left: 10px;
   color: #424141;
   font-size: 1.7rem;
 }
 
-h3 {
+h2 {
   font-size: 28px;
   color: #736363;
 }
@@ -269,6 +262,7 @@ span.category {
     display: none;
   }
 }
+
 @media print {
   #background {
     display: none;
@@ -282,6 +276,7 @@ span.category {
     width: 930px;
   }
 }
+
 .clearfix:after {
   content: "";
   display: table;

@@ -1,16 +1,37 @@
 import React from "react";
 import bg from "./penrose.svg";
-import itamar from "./itamar.jpeg";
+import itamarSmall from "./itamar122.webp";
+import itamarLarge from "./itamar376.webp";
 import "./App.css";
 
 function App() {
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+  console.log({ width });
   return (
-    <div className="App">
+    <>
       <div className="column contact">
         <div className="ui card">
           <div className="clearfix">
-            <img width="188" height="188" src={itamar} alt="Itamar Bar-Lev" />
-            <h2 className="narrow-only">Itamar Bar-Lev</h2>
+            {width <= 1000 ? (
+              <img
+                width="61"
+                height="61"
+                src={itamarSmall}
+                alt="Itamar Bar-Lev"
+              />
+            ) : (
+              <img
+                width="188"
+                height="188"
+                src={itamarLarge}
+                alt="Itamar Bar-Lev"
+              />
+            )}
+            <h1 className="narrow-only">Itamar Bar-Lev</h1>
             <div className="extra content">
               <div className="ui list">
                 <div className="item">
@@ -36,7 +57,7 @@ function App() {
           <h1>Itamar Bar-Lev</h1>
         </div>
         <div className="ui segment work">
-          <h3>Work experience</h3>
+          <h2>Work experience</h2>
           <div className="ui list">
             <div className="item">
               <i className="angle right icon" />
@@ -165,7 +186,7 @@ function App() {
           </div>
         </div>
         <div className="ui segment">
-          <h3>Education</h3>
+          <h2>Education</h2>
           <div className="content indented">
             <div className="summary">
               The Open University of Israel
@@ -175,7 +196,7 @@ function App() {
           </div>
         </div>
         <div className="ui segment">
-          <h3>Abilities</h3>
+          <h2>Abilities</h2>
           <div className="ui list">
             <div className="item">
               <i className="angle right icon" />
@@ -252,7 +273,7 @@ function App() {
         </div>
       </div>
       <img id="background" src={bg} alt="🌟" />
-    </div>
+    </>
   );
 }
 
