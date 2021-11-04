@@ -10,7 +10,7 @@ function App() {
         <div className="ui card">
           <div className="clearfix">
             <img width="188" height="188" src={itamar} alt="Itamar Bar-Lev" />
-            <h2 className="title narrow-only">Itamar Bar-Lev</h2>
+            <h2 className="narrow-only">Itamar Bar-Lev</h2>
             <div className="extra content">
               <div className="ui list">
                 <div className="item">
@@ -33,19 +33,16 @@ function App() {
 
       <div className="column details">
         <div className="ui segment wide-only">
-          <h1 className="title">Itamar Bar-Lev</h1>
+          <h1>Itamar Bar-Lev</h1>
         </div>
         <div className="ui segment work">
-          <h2>Work experience</h2>
+          <h3>Work experience</h3>
           <div className="ui list">
             <div className="item">
               <i className="angle right icon" />
               <div className="content">
                 <div className="summary workplace">
-                  <a href="http://nullrefer.com/?http://www.circuitauction.com/">
-                    Circuit Auction
-                  </a>
-                  , Tel-Aviv
+                  <span className="title">Circuit Auction</span>
                   <div className="date">
                     Since <span className="month">March</span> 2018
                   </div>
@@ -72,8 +69,7 @@ function App() {
               <i className="angle right icon" />
               <div className="content">
                 <div className="summary workplace">
-                  <a href="http://nullrefer.com/?https://oskberlin.com/">OSK</a>
-                  , Berlin
+                  <span className="title">OSK Berlin</span>
                   <div className="date">
                     <span className="month">October</span> 2017 -{" "}
                     <span className="month">March</span> 2018
@@ -96,10 +92,7 @@ function App() {
               <i className="angle right icon" />
               <div className="content">
                 <div className="summary workplace">
-                  <a href="http://nullrefer.com/?https://www.gizra.com">
-                    Gizra
-                  </a>
-                  , Tel-Aviv
+                  <span className="title">Gizra</span>
                   <div className="date">
                     <span className="month">January</span> 2012 -{" "}
                     <span className="month">October</span> 2017
@@ -108,29 +101,19 @@ function App() {
                 </div>
                 <div>
                   <p>
-                    Was the team lead and a programmer of an early version of{" "}
-                    <a href="http://nullrefer.com/?http://www.circuitauction.com/">
-                      Circuit Auction
-                    </a>{" "}
-                    - Which is also my current employer. See above.
+                    Was the team lead and a programmer of an early version of
+                    <span>Circuit Auction</span> - Which is also my current
+                    employer. See above.
                   </p>
                   <br />
                   <p>
                     Also participated in building
                     <br />
-                    <span>
-                      <a href="http://nullrefer.com/?https://www.ethosia.co.il/">
-                        Ethosia
-                      </a>{" "}
-                      - Tech jobs search.
-                    </span>
+                    <span>Ethosia - Tech jobs search.</span>
                     <br />
                     <span>
-                      <a href="http://nullrefer.com/?http://www.haskala-library.net/">
-                        Haskala Library
-                      </a>{" "}
-                      - A book index for the Judaica Division of the Frankfurt
-                      University Library.
+                      Haskala Library - A book index for the Judaica Division of
+                      the Frankfurt University Library.
                     </span>
                     <br />
                   </p>
@@ -141,10 +124,7 @@ function App() {
               <i className="angle right icon" />
               <div className="content">
                 <div className="summary workplace">
-                  <a href="http://nullrefer.com/?http://www.innstant.com">
-                    Innstant
-                  </a>
-                  , Tel-Aviv
+                  <span className="title">Innstant</span>
                   <div className="date">
                     <span className="month">May</span> 2011 -{" "}
                     <span className="month">January</span> 2012
@@ -163,10 +143,7 @@ function App() {
               <i className="angle right icon" />
               <div className="content">
                 <div className="summary workplace">
-                  <a href="http://nullrefer.com/?http://fairmas.com/">
-                    Fairmas
-                  </a>
-                  , Berlin
+                  <span className="title">Fairmas</span>
                   <div className="date">
                     <span className="month">June</span> 2008 -{" "}
                     <span className="month">May</span> 2011
@@ -188,19 +165,17 @@ function App() {
           </div>
         </div>
         <div className="ui segment">
-          <h2>Education</h2>
+          <h3>Education</h3>
           <div className="content indented">
             <div className="summary">
-              <a href="http://www.openu.ac.il/">
-                The Open University of Israel
-              </a>
+              The Open University of Israel
               <div className="date">Since 2012</div>
             </div>
             <div>Studying for a B.A. in cognitive and computer sciences.</div>
           </div>
         </div>
         <div className="ui segment">
-          <h2>Abilities</h2>
+          <h3>Abilities</h3>
           <div className="ui list">
             <div className="item">
               <i className="angle right icon" />
