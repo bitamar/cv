@@ -2,50 +2,53 @@ import React from "react";
 import bg from "./penrose.svg";
 import itamarSmall from "./itamar122.webp";
 import itamarLarge from "./itamar376.webp";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [width, setWidth] = React.useState(window.innerWidth);
+  const narrow = width <= 1000;
 
   React.useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
-  console.log({ width });
+
   return (
-    <>
+    <div className={narrow ? "narrow" : ""}>
+      <div id="background" style={{ backgroundImage: `url(${bg})` }} />
       <div className="column contact">
-        <div className="ui card">
-          <div className="clearfix">
-            {width <= 1000 ? (
+        <div className="card">
+          {narrow ? (
+            <>
               <img
                 width="61"
                 height="61"
                 src={itamarSmall}
                 alt="Itamar Bar-Lev"
               />
-            ) : (
-              <img
-                width="188"
-                height="188"
-                src={itamarLarge}
-                alt="Itamar Bar-Lev"
-              />
-            )}
-            <h1 className="narrow-only">Itamar Bar-Lev</h1>
-            <div className="extra content">
-              <div className="ui list">
-                <div className="item">
-                  <a href="mailto:bitamar@gmail.com">bitamar@gmail.com</a>
-                </div>
-                <div className="item">
-                  <a href="tel:+972-54-9400041">+972-54-9400041</a>
-                </div>
-                <div className="item">
-                  <a href="https://github.com/bitamar">GitHub</a>
-                </div>
-                <div className="item">
-                  <a href="https://www.drupal.org/u/itamar">drupal.org</a>
-                </div>
+              <h1>Itamar Bar-Lev</h1>
+            </>
+          ) : (
+            <img
+              width="188"
+              height="188"
+              src={itamarLarge}
+              alt="Itamar Bar-Lev"
+            />
+          )}
+
+          <div className="extra content">
+            <div className="list">
+              <div className="item">
+                <a href="mailto:bitamar@gmail.com">bitamar@gmail.com</a>
+              </div>
+              <div className="item">
+                <a href="tel:+972-54-9400041">+972-54-9400041</a>
+              </div>
+              <div className="item">
+                <a href="https://github.com/bitamar">GitHub</a>
+              </div>
+              <div className="item">
+                <a href="https://www.drupal.org/u/itamar">drupal.org</a>
               </div>
             </div>
           </div>
@@ -53,14 +56,16 @@ function App() {
       </div>
 
       <div className="column details">
-        <div className="ui segment wide-only">
-          <h1>Itamar Bar-Lev</h1>
-        </div>
-        <div className="ui segment work">
+        {!narrow && (
+          <div className="segment">
+            <h1>Itamar Bar-Lev</h1>
+          </div>
+        )}
+        <div className="segment work">
           <h2>Work experience</h2>
-          <div className="ui list">
+          <div className="list">
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="summary workplace">
                   <span className="title">Circuit Auction</span>
@@ -87,7 +92,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="summary workplace">
                   <span className="title">OSK Berlin</span>
@@ -110,7 +115,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="summary workplace">
                   <span className="title">Gizra</span>
@@ -142,7 +147,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="summary workplace">
                   <span className="title">Innstant</span>
@@ -161,7 +166,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="summary workplace">
                   <span className="title">Fairmas</span>
@@ -185,9 +190,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="ui segment">
+        <div className="segment">
           <h2>Education</h2>
-          <div className="content indented">
+          <div className="content">
             <div className="summary">
               The Open University of Israel
               <div className="date">Since 2012</div>
@@ -195,11 +200,11 @@ function App() {
             <div>Studying for a B.A. in cognitive and computer sciences.</div>
           </div>
         </div>
-        <div className="ui segment">
+        <div className="segment">
           <h2>Abilities</h2>
-          <div className="ui list">
+          <div className="list">
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">PHP &amp; MySQL</div>
                 <div className="description">
@@ -209,7 +214,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">Javascript</div>
                 <div className="description">
@@ -219,7 +224,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">
                   <a href="https://elm-lang.org/">Elm</a>
@@ -231,7 +236,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">Drupal</div>
                 <div className="description">
@@ -242,7 +247,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">HTML &amp; CSS</div>
                 <div className="description">
@@ -251,7 +256,7 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
                 <div className="header">Etc.</div>
                 <div className="description">
@@ -262,18 +267,16 @@ function App() {
               </div>
             </div>
             <div className="item">
-              <i className="angle right icon" />
+              <i />
               <div className="content">
-                Fluent in <span className="category">English</span> and{" "}
-                <span className="category">Hebrew</span>. Speaks basic{" "}
-                <span className="category">German</span>.
+                Fluent in <b>English</b> and <b>Hebrew</b>. Speaks basic{" "}
+                <b>German</b>.
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img id="background" src={bg} alt="🌟" />
-    </>
+    </div>
   );
 }
 

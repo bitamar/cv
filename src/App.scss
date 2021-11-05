@@ -1,0 +1,172 @@
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  padding: 0;
+  margin: 0;
+  color: #444;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #736363;
+}
+
+p {
+  margin: 0 0 1em;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #424141;
+  font-weight: bold;
+
+  &:hover {
+    color: lightpink;
+    text-decoration: none;
+  }
+}
+
+.list > .item .header {
+  font-weight: bold;
+}
+
+.segment {
+  margin: 1em 0;
+  padding: 1em 1em;
+  background-color: rgba(255, 255, 255, 0.55);
+
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .summary.workplace .title {
+    color: #440017;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+.card {
+  img {
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+
+  .extra {
+    background-color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /*top: -20%;*/
+  left: -20%;
+  z-index: -100;
+  background-size: cover;
+}
+
+.date {
+  float: right;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.role {
+  font-weight: bold;
+}
+
+.column {
+  float: left;
+  margin-top: 40px;
+}
+.column.contact {
+  width: 184px;
+  margin-left: 10%;
+}
+.column.details {
+  width: 520px;
+  margin-left: 20px;
+}
+
+.narrow {
+  h1 {
+    float: left;
+    margin-left: 10px;
+    color: #424141;
+    font-size: 1.4em;
+  }
+
+  .column {
+    float: none;
+  }
+  .column.contact {
+    margin: 0 auto;
+    width: auto;
+    max-width: 520px;
+  }
+
+  .column.contact .card .extra.content {
+    clear: none;
+    margin-left: 10px;
+    float: left;
+    width: 300px;
+    font-size: 11px;
+  }
+  .column.contact .card .item {
+    display: inline-block;
+    padding: 0;
+    margin-right: 15px;
+    min-width: 60px;
+  }
+
+  .column.contact .card img {
+    max-width: 16%;
+    float: left;
+  }
+
+  .column.details {
+    width: auto;
+    max-width: 520px;
+    margin: 10px auto 0;
+  }
+
+  #background {
+    left: 0;
+  }
+
+  .wide-only {
+    display: none;
+  }
+}
+
+@media print {
+  #background {
+    display: none;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .column.details {
+    width: 930px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
