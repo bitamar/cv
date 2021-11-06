@@ -1,20 +1,45 @@
 import React from "react";
+import { debounce } from "lodash";
 import bg from "./penrose.svg";
 import itamarSmall from "./itamar122.webp";
 import itamarLarge from "./itamar376.webp";
 import "./App.scss";
 
-function App() {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const narrow = width <= 1000;
+function App(): JSX.Element {
+  const isNarrow = (width: number) => width <= 1000;
+  // eslint-disable-next-line
+  const [displayBg, setDisplayBg] = React.useState(true);
+  const [narrow, setNarrow] = React.useState(isNarrow(window.innerWidth));
 
   React.useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+    const debounced = debounce(() => {
+      setDisplayBg(true);
+    }, 200);
+
+    const handleResize = () => {
+      setDisplayBg(false);
+      debounced();
+
+      if (isNarrow(window.innerWidth) !== narrow) {
+        setNarrow(isNarrow(window.innerWidth));
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      debounced.cancel();
+    };
+  }, [narrow]);
 
   return (
     <div className={narrow ? "narrow" : ""}>
-      <div id="background" style={{ backgroundImage: `url(${bg})` }} />
+      <div
+        id="background"
+        style={{ backgroundImage: `url(${bg})` }}
+        className={!displayBg ? "hidden" : "fade-in"}
+      />
       <div className="column contact">
         <div className="card">
           {narrow ? (
@@ -207,20 +232,20 @@ function App() {
               <i />
               <div className="content">
                 <div className="header">PHP &amp; MySQL</div>
-                <div className="description">
+                <p className="description">
                   Fluent with OO and procedural PHP, and with MySQL. Did a lot
                   of data modeling, and query optimizations.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
               <i />
               <div className="content">
                 <div className="header">Javascript</div>
-                <div className="description">
+                <p className="description">
                   Experienced with AngularJs &amp; jQuery. Familiar with
                   Typescript, node &amp; express.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
@@ -229,49 +254,49 @@ function App() {
                 <div className="header">
                   <a href="https://elm-lang.org/">Elm</a>
                 </div>
-                <div className="description">
+                <p className="description">
                   Two years of experience with functional programming and
                   writing Elm SPAs.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
               <i />
               <div className="content">
                 <div className="header">Drupal</div>
-                <div className="description">
+                <p className="description">
                   Contributed to several popular Drupal modules and profiles,
                   including Commerce-Kickstart, Commons, Organic Groups, Restful
                   and Message.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
               <i />
               <div className="content">
                 <div className="header">HTML &amp; CSS</div>
-                <div className="description">
+                <p className="description">
                   Experienced with Sass, Bootstrap, Semantic UI &amp; HTML5.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
               <i />
               <div className="content">
                 <div className="header">Etc.</div>
-                <div className="description">
+                <p className="description">
                   Experienced with C, Git, Apache, Jenkins, AWS, behat and
                   webdriverio tests. Most comfortable with linux. Knows a little
                   of Haskell and Java.
-                </div>
+                </p>
               </div>
             </div>
             <div className="item">
               <i />
-              <div className="content">
+              <p className="content">
                 Fluent in <b>English</b> and <b>Hebrew</b>. Speaks basic{" "}
                 <b>German</b>.
-              </div>
+              </p>
             </div>
           </div>
         </div>
