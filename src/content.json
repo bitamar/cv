@@ -1,0 +1,93 @@
+{
+  "jobs": [
+    {
+      "place": "Circuit Auction",
+      "when": "Since March 2018",
+      "role": "Full stack developer",
+      "description": [
+        "Making software for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
+        "Currently responsible in part for re-modeling and for data migrations from other systems, to adjust the system for new customers.",
+        "Programming mainly in PHP and Elm. Doing CI with phpunit and webdriverio tests. Doing queuing work with jenkins."
+      ]
+    },
+    {
+      "place": "OSK Berlin",
+      "when": "October 2017 - March 2018",
+      "role": "Backend developer",
+      "description": [
+        "Worked on a drupal based dashboard comparing social media influencers for the Mercedes division in Daimler.",
+        "Was responsible for refactoring the system, and for introducing CI, tests and code reviews."
+      ]
+    },
+    {
+      "place": "Gizra",
+      "when": "January 2012 - October 2017",
+      "role": "Team lead, Elm & PHP programmer",
+      "description": [
+        "Was the team lead and a programmer of an early version of Circuit Auction - Which is also my current employer. See above.",
+        "Also participated in building <br/> Ethosia - Tech jobs search. <br/> Haskala Library - A book index for the Judaica Division of the Frankfurt University Library."
+      ]
+    },
+    {
+      "place": "Innstant",
+      "when": "May 2011 - January 2012",
+      "role": "PHP programmer",
+      "description": [
+        "Worked on an hotel search website, built with Zend framework."
+      ]
+    },
+    {
+      "place": "Fairmas",
+      "when": "June 2008 - May 2011",
+      "role": "PHP programmer",
+      "description": [
+        "Worked on an hotels performance comparison system for hotel chains, built with a proprietary MVC framework.",
+        "Designed a configuration system for creating new reports. Was responsible for maintenance and adjustments for new hotels."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "place": "The Open University of Israel",
+      "when": "2012 - 2016",
+      "description": ["Studying for a B.A. in cognitive and computer sciences."]
+    }
+  ],
+  "abilities": [
+    {
+      "title": "PHP & MySQL",
+      "description": [
+        "Fluent with OO and procedural PHP, and with MySQL. Did a lot of data modeling, and query optimizations."
+      ]
+    },
+    {
+      "title": "Javascript",
+      "description": [
+        "Experienced with AngularJs & jQuery. Familiar with Typescript, node & express."
+      ]
+    },
+    {
+      "title": "Elm",
+      "description": [
+        "Two years of experience with functional programming and writing Elm SPAs."
+      ]
+    },
+    {
+      "title": "Drupal",
+      "description": [
+        "Contributed to several popular Drupal modules and profiles, including Commerce-Kickstart, Commons, Organic Groups, Restful and Message."
+      ]
+    },
+    {
+      "title": "HTML & CSS",
+      "description": ["Experienced with Sass, Bootstrap, Semantic UI & HTML5."]
+    },
+    {
+      "title": "Misc.",
+      "description": [
+        "Experienced with C, Git, Apache, Jenkins, AWS, behat and webdriverio tests. Most comfortable with linux. Knows a little of Haskell and Java.",
+        "Fluent in <b>English</b> and <b>Hebrew</b>. Speaks basic <b>German</b>."
+      ]
+    }
+  ]
+}

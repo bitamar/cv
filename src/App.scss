@@ -1,8 +1,9 @@
 body {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: monospace;
   line-height: 1.4em;
   color: rgba(0, 0, 0, 0.87);
   margin: 0;
+  font-size: 16px;
 }
 
 h1 {
@@ -16,11 +17,12 @@ h1 {
 h2 {
   font-size: 1.6em;
   color: #736363;
+  font-weight: normal;
+  margin: 0 0 1em;
 }
 
 p {
   margin: 0 0 1em;
-  text-align: justify;
 }
 
 a {
@@ -34,14 +36,23 @@ a {
   }
 }
 
-.list > .item .header {
-  font-weight: bold;
+.list {
+  &.separate-items > div {
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightpink;
+  }
+
+  &.bullets > div .title:before {
+    content: "- ";
+  }
 }
 
-.segment {
+.box {
   margin: 1em 0;
   padding: 1em 1em;
-  background-color: rgba(255, 255, 255, 0.55);
+  background-color: rgb(250 242 242 / 65%);
+  border-radius: 10px;
 
   &:first-child {
     margin-top: 0;
@@ -49,21 +60,12 @@ a {
   &:last-child {
     margin-bottom: 0;
   }
-  .summary.workplace .title {
-    color: #440017;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
 }
 
-.card {
+.contact {
   img {
     border-radius: 10px;
     border: 2px solid white;
-  }
-
-  .extra {
-    background-color: rgba(255, 255, 255, 0.55);
   }
 }
 
@@ -97,14 +99,33 @@ a {
   }
 }
 
-.date {
-  float: right;
-  font-size: 0.8em;
-  color: rgba(0, 0, 0, 0.7);
+.cv-item {
+  .place {
+    color: #423b3b;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .when {
+    float: right;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .role {
+    margin-top: 0.2em;
+    font-weight: bold;
+  }
+
+  .description {
+    margin-top: 1em;
+  }
 }
 
-.role {
-  font-weight: bold;
+.ability {
+  .title {
+    font-weight: bold;
+  }
 }
 
 .column {
@@ -112,7 +133,6 @@ a {
   margin-top: 40px;
 }
 .column.contact {
-  width: 184px;
   margin-left: 10%;
 }
 .column.details {
@@ -135,24 +155,25 @@ a {
     margin: 0 auto;
     width: auto;
     max-width: 520px;
-  }
 
-  .column.contact .card .extra.content {
-    clear: none;
-    margin-left: 10px;
-    float: left;
-    width: 300px;
-    font-size: 11px;
-  }
-  .column.contact .card .item {
-    display: inline-block;
-    padding: 0;
-    margin-right: 15px;
-    min-width: 60px;
-  }
+    .content {
+      clear: none;
+      margin-left: 10px;
+      float: left;
+      width: 300px;
+      font-size: 11px;
+    }
 
-  .column.contact .card img {
-    float: left;
+    .item {
+      display: inline-block;
+      padding: 0;
+      margin-right: 15px;
+      min-width: 60px;
+    }
+
+    img {
+      float: left;
+    }
   }
 
   .column.details {
@@ -182,10 +203,4 @@ a {
   .column.details {
     width: 930px;
   }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
