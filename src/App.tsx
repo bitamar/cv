@@ -1,9 +1,25 @@
 import React from "react";
-import { debounce } from "lodash";
 import bg from "./penrose.svg";
 import itamarSmall from "./itamar122.webp";
 import itamarLarge from "./itamar376.webp";
 import "./App.scss";
+
+function debounce(fn: () => void) {
+  let timeoutID: number | null = null;
+
+  return {
+    go() {
+      if (timeoutID) {
+        clearTimeout(timeoutID);
+      }
+
+      timeoutID = window.setTimeout(fn, 500);
+    },
+    cancel() {
+      timeoutID && clearTimeout(timeoutID);
+    },
+  };
+}
 
 function App(): JSX.Element {
   const isNarrow = (width: number) => width <= 1000;
@@ -14,11 +30,11 @@ function App(): JSX.Element {
   React.useEffect(() => {
     const debounced = debounce(() => {
       setDisplayBg(true);
-    }, 200);
+    });
 
     const handleResize = () => {
       setDisplayBg(false);
-      debounced();
+      debounced.go();
 
       if (isNarrow(window.innerWidth) !== narrow) {
         setNarrow(isNarrow(window.innerWidth));
