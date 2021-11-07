@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.16781aad.chunk.css",
-    "main.js": "./static/js/main.22978089.chunk.js",
-    "main.js.map": "./static/js/main.22978089.chunk.js.map",
+    "main.css": "./static/css/main.3e4c0306.chunk.css",
+    "main.js": "./static/js/main.45dad370.chunk.js",
+    "main.js.map": "./static/js/main.45dad370.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.208558c7.js",
     "runtime-main.js.map": "./static/js/runtime-main.208558c7.js.map",
     "static/js/2.f70edb2e.chunk.js": "./static/js/2.f70edb2e.chunk.js",
     "static/js/2.f70edb2e.chunk.js.map": "./static/js/2.f70edb2e.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.16781aad.chunk.css.map": "./static/css/main.16781aad.chunk.css.map",
+    "static/css/main.3e4c0306.chunk.css.map": "./static/css/main.3e4c0306.chunk.css.map",
     "static/js/2.f70edb2e.chunk.js.LICENSE.txt": "./static/js/2.f70edb2e.chunk.js.LICENSE.txt",
     "static/media/itamar122.73bb3735.webp": "./static/media/itamar122.73bb3735.webp",
     "static/media/itamar376.a52eed20.webp": "./static/media/itamar376.a52eed20.webp",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.208558c7.js",
     "static/js/2.f70edb2e.chunk.js",
-    "static/css/main.16781aad.chunk.css",
-    "static/js/main.22978089.chunk.js"
+    "static/css/main.3e4c0306.chunk.css",
+    "static/js/main.45dad370.chunk.js"
   ]
 }
