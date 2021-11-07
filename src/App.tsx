@@ -12,7 +12,7 @@ function debounce(f: () => void) {
 
   return {
     go() {
-      timeout && clearTimeout(timeout);
+      this.cancel();
       timeout = window.setTimeout(f, 500);
     },
     cancel() {
@@ -22,10 +22,10 @@ function debounce(f: () => void) {
 }
 
 function App(): JSX.Element {
-  const isNarrow = (width: number) => width <= 1000;
-  // eslint-disable-next-line
+  const isNarrow = () => window.innerWidth <= 1000;
+
   const [displayBg, setDisplayBg] = React.useState(true);
-  const [narrow, setNarrow] = React.useState(isNarrow(window.innerWidth));
+  const [narrow, setNarrow] = React.useState(isNarrow());
 
   React.useEffect(() => {
     const debounced = debounce(() => {
@@ -36,8 +36,8 @@ function App(): JSX.Element {
       setDisplayBg(false);
       debounced.go();
 
-      if (isNarrow(window.innerWidth) !== narrow) {
-        setNarrow(isNarrow(window.innerWidth));
+      if (isNarrow() !== narrow) {
+        setNarrow(isNarrow());
       }
     };
 
@@ -57,41 +57,27 @@ function App(): JSX.Element {
         className={!displayBg ? "hidden" : "fade-in"}
       />
       <div className="column contact">
-        <div className="card">
-          {narrow ? (
-            <>
-              <img
-                width="61"
-                height="61"
-                src={itamarSmall}
-                alt="Itamar Bar-Lev"
-              />
-              <h1>Itamar Bar-Lev</h1>
-            </>
-          ) : (
-            <img
-              width="188"
-              height="188"
-              src={itamarLarge}
-              alt="Itamar Bar-Lev"
-            />
-          )}
+        {narrow ? (
+          <>
+            <h1>Itamar Bar-Lev</h1>
+            <img width="61" height="61" src={itamarSmall} alt="" />
+          </>
+        ) : (
+          <img width="188" height="188" src={itamarLarge} alt="" />
+        )}
 
-          <div className="box content">
-            <div className="list">
-              <div className="item">
-                <a href="mailto:bitamar@gmail.com">bitamar@gmail.com</a>
-              </div>
-              <div className="item">
-                <a href="tel:+972-54-9400041">+972-54-9400041</a>
-              </div>
-              <div className="item">
-                <a href="https://github.com/bitamar">GitHub</a>
-              </div>
-              <div className="item">
-                <a href="https://www.drupal.org/u/itamar">drupal.org</a>
-              </div>
-            </div>
+        <div className="box list">
+          <div className="item">
+            <a href="mailto:bitamar@gmail.com">bitamar@gmail.com</a>
+          </div>
+          <div className="item">
+            <a href="tel:+972-54-9400041">+972-54-9400041</a>
+          </div>
+          <div className="item">
+            <a href="https://github.com/bitamar">GitHub</a>
+          </div>
+          <div className="item">
+            <a href="https://www.drupal.org/u/itamar">drupal.org</a>
           </div>
         </div>
       </div>

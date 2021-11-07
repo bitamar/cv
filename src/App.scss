@@ -41,6 +41,10 @@ a {
     margin-top: 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid lightpink;
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   &.bullets > div .title:before {
@@ -66,6 +70,10 @@ a {
   img {
     border-radius: 10px;
     border: 2px solid white;
+  }
+
+  .item {
+    line-height: 2.2em;
   }
 }
 
@@ -143,51 +151,31 @@ a {
 .narrow {
   h1 {
     float: left;
-    margin-left: 10px;
     color: #424141;
     font-size: 1.4em;
   }
 
   .column {
     float: none;
+    margin: 0;
   }
+
   .column.contact {
-    margin: 0 auto;
-    width: auto;
-    max-width: 520px;
-
-    .content {
-      clear: none;
-      margin-left: 10px;
-      float: left;
-      width: 300px;
-      font-size: 11px;
-    }
-
-    .item {
-      display: inline-block;
+    padding: 1em;
+    .box {
       padding: 0;
-      margin-right: 15px;
-      min-width: 60px;
     }
-
     img {
-      float: left;
+      float: right;
     }
   }
 
   .column.details {
-    width: auto;
-    max-width: 520px;
-    margin: 10px auto 0;
+    width: 100%;
   }
 
   #background {
     left: 0;
-  }
-
-  .wide-only {
-    display: none;
   }
 }
 
