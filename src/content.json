@@ -3,10 +3,10 @@
     {
       "place": "Wix",
       "when": "5/2020 - Present",
-      "role": "Frontend developer",
+      "role": "Frontend developer - Viewer",
       "description": [
-        "Working in the website viewer group, in a team responsible for rendering apps within wix websites.",
-        "Took part in a major rewrite of the viewer, to improve its performance. On the day-to-day responsible for extending the viewer apis for apps, and investigating performance problems",
+        "Working in a team responsible for rendering apps within Wix websites.",
+        "Took part in a major rewrite to improve the website viewer performance. Responsible for extending the apis for apps and user code, and investigating performance problems.",
         "Mostly writing vanilla typescript, and some react."
       ]
     },
@@ -15,9 +15,9 @@
       "when": "3/2018 - 4/2020",
       "role": "Full stack developer",
       "description": [
-        "Made systems for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
+        "Saas for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
         "Was responsible for rebuilding the backend for robustness, and for building data migration pipelines from other systems.",
-        "Programmed mainly in PHP and Elm in the frontend. CI with phpunit and webdriverio."
+        "Programmed mainly in PHP, and Elm in the frontend"
       ]
     },
     {
@@ -34,8 +34,8 @@
       "when": "1/2012 - 10/2017",
       "role": "Team lead, Elm & PHP programmer",
       "description": [
-        "Was the team lead and a programmer of an early version of Circuit Auction - Which is also my current employer. See above.",
-        "Also participated in building <br/> Ethosia - Tech jobs search. <br/> Haskala Library - A book index for the Judaica Division of the Frankfurt University Library."
+        "Was the team lead and a programmer of an early version of Circuit Auction - See above.",
+        "Also participated in building many drupal based projects, including:<br/> Ethosia - Tech jobs search. <br/> Haskala Library - A book index for the Judaica Division of the Frankfurt University Library."
       ]
     },
     {
@@ -60,20 +60,22 @@
     {
       "place": "The Open University of Israel",
       "when": "2012 - 2016",
-      "description": ["Studying for a B.A. in cognitive and computer sciences."]
+      "description": [
+        "Studied for a B.A. in cognitive and computer sciences - WIP"
+      ]
     }
   ],
   "abilities": [
     {
-      "title": "PHP & MySQL",
+      "title": "Javascript",
       "description": [
-        "Fluent with OO and procedural PHP, and with MySQL. Did a lot of data modeling, and query optimizations."
+        "In recent years writing mostly functional <b>typescript</b>. Experienced with <b>react</b>, web workers, webpack & web sockets. Familiar with node & express."
       ]
     },
     {
-      "title": "Javascript",
+      "title": "PHP & MySQL",
       "description": [
-        "Experienced with AngularJs & jQuery. Familiar with Typescript, node & express."
+        "Comfortable with OO and procedural PHP, and with MySQL. Used <b>drupal</b> a lot and contributed to several popular modules and installation profiles."
       ]
     },
     {
@@ -83,19 +85,13 @@
       ]
     },
     {
-      "title": "Drupal",
-      "description": [
-        "Contributed to several popular Drupal modules and profiles, including Commerce-Kickstart, Commons, Organic Groups, Restful and Message."
-      ]
-    },
-    {
       "title": "HTML & CSS",
       "description": ["Experienced with Sass, Bootstrap, Semantic UI & HTML5."]
     },
     {
       "title": "Misc.",
       "description": [
-        "Experienced with C, Git, Apache, Jenkins, AWS, behat and webdriverio tests. Most comfortable with linux. Knows a little of Haskell and Java.",
+        "Experienced with C, Git, Apache, Jenkins, AWS, Linux, sass, bootstrap.",
         "Fluent in <b>English</b> and <b>Hebrew</b>. Speaks basic <b>German</b>."
       ]
     }

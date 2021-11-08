@@ -22,7 +22,7 @@ h2 {
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 0.6em;
 }
 
 a {
@@ -47,8 +47,12 @@ a {
     }
   }
 
-  &.bullets > div .title:before {
-    content: "- ";
+  &.bullets > div {
+    margin-bottom: 2em;
+
+    .title:before {
+      content: "- ";
+    }
   }
 }
 
@@ -61,9 +65,6 @@ a {
   &:first-child {
     margin-top: 0;
   }
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .contact {
@@ -74,6 +75,11 @@ a {
 
   .item {
     line-height: 2.2em;
+  }
+
+  .box {
+    margin-top: 1em;
+    font-size: 15px;
   }
 }
 
@@ -158,24 +164,23 @@ a {
   .column {
     float: none;
     margin: 0;
+    padding: 1em;
+    padding-bottom: 0;
   }
 
   .column.contact {
-    padding: 1em;
-    .box {
-      padding: 0;
-    }
     img {
       float: right;
     }
   }
 
   .column.details {
-    width: 100%;
+    width: auto;
   }
 
   #background {
     height: 100%;
+    width: 160%;
   }
 }
 
@@ -192,13 +197,19 @@ a {
     display: block;
   }
 
-  html {
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+    padding: 30px;
+  }
+
+  p {
+    text-align: justify;
   }
 
   h1 {
     position: absolute;
-    top: 0;
+    top: 30px;
   }
 
   .column {
@@ -208,23 +219,24 @@ a {
 
   .column.contact {
     padding: 0;
-    margin-left: 40px;
+    margin-left: 15px;
 
     .box {
       padding: 0;
-      margin-top: 60px;
+      margin-top: 50px;
     }
 
     img {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 40px;
+      top: 30px;
       width: 80px;
       height: 80px;
     }
   }
 
   .column.details {
-    width: 930px;
+    margin: 0;
+    width: auto;
   }
 }
