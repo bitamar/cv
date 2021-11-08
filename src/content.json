@@ -1,18 +1,28 @@
 {
   "jobs": [
     {
+      "place": "Wix",
+      "when": "5/2020 - Present",
+      "role": "Frontend developer",
+      "description": [
+        "Working in the website viewer group, in a team responsible for rendering apps within wix websites.",
+        "Took part in a major rewrite of the viewer, to improve its performance. On the day-to-day responsible for extending the viewer apis for apps, and investigating performance problems",
+        "Mostly writing vanilla typescript, and some react."
+      ]
+    },
+    {
       "place": "Circuit Auction",
-      "when": "Since March 2018",
+      "when": "3/2018 - 4/2020",
       "role": "Full stack developer",
       "description": [
-        "Making software for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
-        "Currently responsible in part for re-modeling and for data migrations from other systems, to adjust the system for new customers.",
-        "Programming mainly in PHP and Elm. Doing CI with phpunit and webdriverio tests. Doing queuing work with jenkins."
+        "Made systems for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
+        "Was responsible for rebuilding the backend for robustness, and for building data migration pipelines from other systems.",
+        "Programmed mainly in PHP and Elm in the frontend. CI with phpunit and webdriverio."
       ]
     },
     {
       "place": "OSK Berlin",
-      "when": "October 2017 - March 2018",
+      "when": "10/2017 - 3/2018",
       "role": "Backend developer",
       "description": [
         "Worked on a drupal based dashboard comparing social media influencers for the Mercedes division in Daimler.",
@@ -21,7 +31,7 @@
     },
     {
       "place": "Gizra",
-      "when": "January 2012 - October 2017",
+      "when": "1/2012 - 10/2017",
       "role": "Team lead, Elm & PHP programmer",
       "description": [
         "Was the team lead and a programmer of an early version of Circuit Auction - Which is also my current employer. See above.",
@@ -30,7 +40,7 @@
     },
     {
       "place": "Innstant",
-      "when": "May 2011 - January 2012",
+      "when": "5/2011 - 1/2012",
       "role": "PHP programmer",
       "description": [
         "Worked on an hotel search website, built with Zend framework."
@@ -38,7 +48,7 @@
     },
     {
       "place": "Fairmas",
-      "when": "June 2008 - May 2011",
+      "when": "6/2008 - 5/2011",
       "role": "PHP programmer",
       "description": [
         "Worked on an hotels performance comparison system for hotel chains, built with a proprietary MVC framework.",

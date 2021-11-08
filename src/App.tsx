@@ -22,7 +22,7 @@ function debounce(f: () => void) {
 }
 
 function App(): JSX.Element {
-  const isNarrow = () => window.innerWidth <= 1000;
+  const isNarrow = () => window.innerWidth <= 1024;
 
   const [displayBg, setDisplayBg] = React.useState(true);
   const [narrow, setNarrow] = React.useState(isNarrow());
@@ -54,29 +54,33 @@ function App(): JSX.Element {
       <div
         id="background"
         style={{ backgroundImage: `url(${bg})` }}
-        className={!displayBg ? "hidden" : "fade-in"}
+        className={"dont-print " + (!displayBg ? "hidden" : "fade-in")}
       />
       <div className="column contact">
         {narrow ? (
-          <>
+          <div style={{ height: "61px" }}>
             <h1>Itamar Bar-Lev</h1>
             <img width="61" height="61" src={itamarSmall} alt="" />
-          </>
+          </div>
         ) : (
           <img width="188" height="188" src={itamarLarge} alt="" />
         )}
 
         <div className="box list">
+          <div className="item just-print">
+            See up-to-date version at{" "}
+            <a href="">https://bitamar.github.io/cv</a>
+          </div>
           <div className="item">
             <a href="mailto:bitamar@gmail.com">bitamar@gmail.com</a>
           </div>
           <div className="item">
             <a href="tel:+972-54-9400041">+972-54-9400041</a>
           </div>
-          <div className="item">
+          <div className="item dont-print">
             <a href="https://github.com/bitamar">GitHub</a>
           </div>
-          <div className="item">
+          <div className="item dont-print">
             <a href="https://www.drupal.org/u/itamar">drupal.org</a>
           </div>
         </div>
