@@ -7,11 +7,15 @@ body {
 }
 
 h1 {
+  padding: 0 0 0 1rem;
   font-size: 2em;
   line-height: 1.3em;
-  padding: 0;
   margin: 0;
   color: #444;
+}
+
+.summary {
+  font-size: 1.2em;
 }
 
 h2 {
@@ -120,6 +124,17 @@ a {
     font-weight: bold;
   }
 
+  .where {
+    font-size: 0.8em;
+    &:before {
+      content: ", ";
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 1em;
+  }
+
   .when {
     float: right;
     font-size: 0.8em;
@@ -155,12 +170,6 @@ a {
 }
 
 .narrow {
-  h1 {
-    float: left;
-    color: #424141;
-    font-size: 1.4em;
-  }
-
   .column {
     float: none;
     margin: 0;
@@ -170,7 +179,14 @@ a {
 
   .column.contact {
     img {
-      float: right;
+      vertical-align: middle;
+    }
+
+    h1 {
+      display: inline-block;
+      color: #424141;
+      font-size: 1.4em;
+      margin-left: 5%;
     }
   }
 
@@ -184,23 +200,18 @@ a {
   }
 }
 
-.just-print {
-  display: none;
-}
-
 @media print {
-  .dont-print {
-    display: none;
+  @page {
+    margin: 22mm 20mm;
   }
 
-  .just-print {
-    display: block;
+  .dont-print {
+    display: none;
   }
 
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    padding: 30px;
   }
 
   p {
@@ -209,34 +220,79 @@ a {
 
   h1 {
     position: absolute;
-    top: 30px;
+    top: 0;
+    padding: 0;
+  }
+
+  .cv-item {
+    break-inside: avoid;
   }
 
   .column {
     float: none;
     margin: 0;
+    padding: 0;
+
+    .box {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .summary {
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
   }
 
   .column.contact {
-    padding: 0;
-    margin-left: 15px;
+    margin: 0;
 
     .box {
-      padding: 0;
-      margin-top: 50px;
+      margin-top: 30px;
+      margin-bottom: 0;
+
+      .item {
+        margin: 0;
+        font-size: 0.9em;
+
+        a {
+          font-weight: normal;
+        }
+
+        &:after {
+          margin-left: 1em;
+          margin-right: 1em;
+          content: "·";
+        }
+
+        &:last-child:after {
+          content: "";
+          margin: 0;
+        }
+      }
     }
 
     img {
       position: absolute;
-      right: 40px;
-      top: 30px;
-      width: 80px;
-      height: 80px;
+      right: 0;
+      top: 5px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .item {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 0.9em;
     }
   }
 
   .column.details {
     margin: 0;
     width: auto;
+
+    .summary {
+      margin: 0;
+    }
   }
 }

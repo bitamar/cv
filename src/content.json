@@ -1,28 +1,57 @@
 {
+  "summary": "10+ years of experience in both frontend and backend development of web apps",
   "jobs": [
     {
       "place": "Wix",
-      "when": "5/2020 - Present",
+      "when": {
+        "from": {
+          "month": 5,
+          "year": 2020
+        }
+      },
+      "where": "Tel Aviv",
       "role": "Frontend developer - Viewer",
       "description": [
-        "Working in a team responsible for rendering apps within Wix websites.",
-        "Took part in a major rewrite to improve the website viewer performance. Responsible for extending the apis for apps and user code, and investigating performance problems.",
-        "Mostly writing vanilla typescript, and some react."
+        "Working in a team mainly responsible for rendering apps within Wix websites.",
+        "Responsible for extending the APIs for apps, fixing bugs and investigating performance problems.",
+        "Took part in a major rewrite of the viewer, for improving wix websites lighthouse scores.",
+        "<b>Typescript</b>, <b>react</b>, <b>node.js</b>, <b>webpack</b>, <b>chrome's debugger</b> :)"
       ]
     },
     {
       "place": "Circuit Auction",
-      "when": "3/2018 - 4/2020",
+      "subtitle": "SaaS for running auction houses, allowing remote participation in live auctions",
+      "when": {
+        "from": {
+          "month": 3,
+          "year": 2018
+        },
+        "to": {
+          "month": 4,
+          "year": 2020
+        }
+      },
+      "where": "Tel Aviv",
       "role": "Full stack developer",
       "description": [
-        "Saas for auction houses management. Handling the online/ room bidding, catalog website, back office & low latency live video broadcasting.",
-        "Was responsible for rebuilding the backend for robustness, and for building data migration pipelines from other systems.",
-        "Programmed mainly in PHP, and Elm in the frontend"
+        "Was responsible for rebuilding the live bidding system (Back & front), from mockups to production level. Also participated in architecture and product decisions.",
+        "<b>PHP</b>, <b>MySql</b>, <b>Elm</b>, <b>Bootstrap</b>, <b>Jenkins</b>"
       ]
     },
     {
       "place": "OSK Berlin",
-      "when": "10/2017 - 3/2018",
+      "hidden": true,
+      "when": {
+        "from": {
+          "month": 10,
+          "year": 2017
+        },
+        "to": {
+          "month": 3,
+          "year": 2018
+        }
+      },
+      "where": "Germany",
       "role": "Backend developer",
       "description": [
         "Worked on a drupal based dashboard comparing social media influencers for the Mercedes division in Daimler.",
@@ -31,16 +60,40 @@
     },
     {
       "place": "Gizra",
-      "when": "1/2012 - 10/2017",
+      "subtitle": "Project company building drupal websites, mostly for enterprise customers",
+      "when": {
+        "from": {
+          "month": 1,
+          "year": 2012
+        },
+        "to": {
+          "month": 10,
+          "year": 2017
+        }
+      },
+      "where": "Tel Aviv",
       "role": "Team lead, Elm & PHP programmer",
       "description": [
-        "Was the team lead and a programmer of an early version of Circuit Auction - See above.",
-        "Also participated in building many drupal based projects, including:<br/> Ethosia - Tech jobs search. <br/> Haskala Library - A book index for the Judaica Division of the Frankfurt University Library."
+        "After 2 years got promoted to Team Lead role, while maintaining ~50% hands on development.",
+        "Created an early mockup of <b>Circuit Auction</b>, on which I later worked full time - See above.",
+        "Participated in building many Drupal based projects, for example: <a href=\"https://www.gizra.com/portfolio/#danel-jobs\">Danel Jobs</a>, <a href=\"https://www.gizra.com/portfolio/#opsys\">OpSys</a> & <a href=\"https://www.gizra.com/portfolio/#united-nations-country-team-sites\">United Nations Country Team Sites</a>",
+        "<b>PHP</b>, <b>drupal</b>, <b>MySql</b>, <b>Elm</b>, <b>jQuery</b>, <b>AngularJS</b>, <b>Bootstrap</b>"
       ]
     },
     {
       "place": "Innstant",
-      "when": "5/2011 - 1/2012",
+      "hidden": true,
+      "when": {
+        "from": {
+          "month": 5,
+          "year": 2011
+        },
+        "to": {
+          "month": 1,
+          "year": 2012
+        }
+      },
+      "where": "Tel Aviv",
       "role": "PHP programmer",
       "description": [
         "Worked on an hotel search website, built with Zend framework."
@@ -48,52 +101,58 @@
     },
     {
       "place": "Fairmas",
-      "when": "6/2008 - 5/2011",
+      "subtitle": "SaaS company for hotel chains management",
+      "when": {
+        "from": {
+          "month": 6,
+          "year": 2008
+        },
+        "to": {
+          "month": 5,
+          "year": 2011
+        }
+      },
+      "where": "Germany",
       "role": "PHP programmer",
       "description": [
-        "Worked on an hotels performance comparison system for hotel chains, built with a proprietary MVC framework.",
-        "Designed a configuration system for creating new reports. Was responsible for maintenance and adjustments for new hotels."
+        "Worked on an hotels financial performance comparison system, built with a proprietary MVC framework.",
+        "Co-designed and built an xml configuration system that allowed to program new reports easily. Also created the UI and backend for scheduling reports to be emailed automatically.",
+        "<b>PHP</b>, <b>MySql</b>, <b>Javascript</b>"
       ]
     }
   ],
   "education": [
     {
-      "place": "The Open University of Israel",
-      "when": "2012 - 2016",
-      "description": [
-        "Studied for a B.A. in cognitive and computer sciences - WIP"
-      ]
+      "place": "The Open University",
+      "when": {
+        "from": {
+          "year": 2012
+        },
+        "to": {
+          "year": 2016
+        }
+      },
+      "where": "Israel",
+      "description": ["Studies towards B.A. in Cognitive and Computer Sciences"]
     }
   ],
-  "abilities": [
-    {
-      "title": "Javascript",
-      "description": [
-        "In recent years writing mostly functional <b>typescript</b>. Experienced with <b>react</b>, web workers, webpack & web sockets. Familiar with node & express."
-      ]
-    },
-    {
-      "title": "PHP & MySQL",
-      "description": [
-        "Comfortable with OO and procedural PHP, and with MySQL. Used <b>drupal</b> a lot and contributed to several popular modules and installation profiles."
-      ]
-    },
-    {
-      "title": "Elm",
-      "description": [
-        "Two years of experience with functional programming and writing Elm SPAs."
-      ]
-    },
-    {
-      "title": "HTML & CSS",
-      "description": ["Experienced with Sass, Bootstrap, Semantic UI & HTML5."]
-    },
-    {
-      "title": "Misc.",
-      "description": [
-        "Experienced with C, Git, Apache, Jenkins, AWS, Linux, sass, bootstrap.",
-        "Fluent in <b>English</b> and <b>Hebrew</b>. Speaks basic <b>German</b>."
-      ]
-    }
-  ]
+  "technologies": {
+    "advanced": [
+      "JavaScript",
+      "Typescript",
+      "React",
+      "Elm",
+      "Webpack",
+      "Sass",
+      "Bootstrap",
+      "Git",
+      "Linux",
+      "PHP (OO)",
+      "C",
+      "MySQL",
+      "Drupal"
+    ],
+    "intermediate": ["Node.js", "express", "Apache", "Jenkins"]
+  },
+  "languages": "Native <b>Hebrew</b>, fluent <b>English</b> & intermediate <b>German</b>."
 }

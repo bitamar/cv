@@ -5,16 +5,12 @@ function Ability({
   description,
 }: {
   title: string;
-  description: Array<string>;
+  description: string;
 }): JSX.Element {
   return (
     <div className="ability">
       <div className="title">{title}</div>
-      <div className="description">
-        {description.map((p, i) => (
-          <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
-        ))}
-      </div>
+      <div className="description">{description}</div>
     </div>
   );
 }
