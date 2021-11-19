@@ -8,9 +8,9 @@ function Ability({
   description: string;
 }): JSX.Element {
   return (
-    <div className="ability">
+    <div className="item">
       <div className="title">{title}</div>
-      <div className="description">{description}</div>
+      <p className="description">{description}</p>
     </div>
   );
 }

@@ -102,14 +102,16 @@ function App(): JSX.Element {
 
         <div className="box">
           <h2>Technologies</h2>
-          <Ability
-            title="Advanced"
-            description={content.technologies.advanced.join(", ")}
-          />{" "}
-          <Ability
-            title="Intermediate"
-            description={content.technologies.intermediate.join(", ")}
-          />
+          <div className="tech">
+            <Ability
+              title="Advanced"
+              description={content.technologies.advanced.join(", ")}
+            />
+            <Ability
+              title="Intermediate"
+              description={content.technologies.intermediate.join(", ")}
+            />
+          </div>
         </div>
 
         <div className="box">

@@ -36,7 +36,7 @@ function CvItem({
       <span className="place">{place}</span>
       <span className="where">{where}</span>
       <When {...when} />
-      {subtitle && <div className="subtitle">{subtitle}</div>}
+      {subtitle && <p className="subtitle">{subtitle}</p>}
       {role && <div className="role">{role}</div>}
       <div className="description">
         {description.map((p, i) => (
