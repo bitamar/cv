@@ -10,7 +10,7 @@ type CvItem = {
   place: string;
   subtitle?: string;
   when: When;
-  where: string;
+  where?: string;
   role?: string;
   description: Array<string>;
 };
@@ -34,7 +34,7 @@ function CvItem({
   return (
     <div className="cv-item">
       <span className="place">{place}</span>
-      <span className="where">{where}</span>
+      {where && <span className="where">{where}</span>}
       <When {...when} />
       {subtitle && <p className="subtitle">{subtitle}</p>}
       {role && <div className="role">{role}</div>}

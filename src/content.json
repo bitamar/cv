@@ -2,20 +2,40 @@
   "summary": "10+ years of experience in both frontend and backend development of web apps",
   "jobs": [
     {
+      "place": "aporia",
+      "subtitle": "ML monitoring",
+      "when": {
+        "from": {
+          "month": 2,
+          "year": 2022
+        }
+      },
+      "where": "Tel Aviv",
+      "role": "Full stack developer",
+      "description": [
+        "Improving ux and stability of the company's dashboard.",
+        "<b>Typescript</b>, <b>Vue</b>, <b>python</b>, <b>FastAPI</b>"
+      ]
+    },
+    {
       "place": "Wix",
       "when": {
         "from": {
           "month": 5,
           "year": 2020
+        },
+        "to": {
+          "month": 1,
+          "year": 2022
         }
       },
       "where": "Tel Aviv",
-      "role": "Frontend developer - Viewer",
+      "role": "Frontend developer",
       "description": [
-        "Working in a team mainly responsible for rendering apps within Wix websites.",
-        "Responsible for extending the APIs for apps, fixing bugs and investigating performance problems.",
-        "Took part in a major rewrite of the viewer, for improving wix websites lighthouse scores.",
-        "Using: <b>Typescript</b>, <b>react</b>, <b>node.js</b>, <b>webpack</b>, <b>chrome's debugger</b> :)"
+        "Working in the team responsible for rendering apps within Wix websites.",
+        "Responsible for extending the APIs for apps, and improving loading performance.",
+        "Took part in a rewrite of the wix viewer, for improving customer websites lighthouse scores.",
+        "<b>Typescript</b>, <b>react</b>, <b>node.js</b>, <b>webpack</b>, <b>chrome's debugger</b> :)"
       ]
     },
     {
@@ -60,7 +80,6 @@
     },
     {
       "place": "Gizra",
-      "subtitle": "Project company building drupal websites, mostly for enterprise customers",
       "when": {
         "from": {
           "month": 1,
@@ -72,10 +91,10 @@
         }
       },
       "where": "Tel Aviv",
-      "role": "Team lead, Elm & PHP programmer",
+      "role": "Team lead, Elm & PHP developer",
       "description": [
-        "After 2 years got promoted to Team Lead role, while maintaining ~50% hands on development.",
-        "Created an early mockup of <b>Circuit Auction</b>, on which I later worked full time - See above.",
+        "After 2 years got promoted to Team Lead role, while maintaining ~50% hands on.",
+        "Created an early mockup of <b>Circuit Auction</b>, on which I later worked full time.",
         "Participated in building many Drupal based projects, for example: <a href=\"https://www.gizra.com/portfolio/#danel-jobs\">Danel Jobs</a>, <a href=\"https://www.gizra.com/portfolio/#opsys\">OpSys</a> & <a href=\"https://www.gizra.com/portfolio/#united-nations-country-team-sites\">United Nations Country Sites</a>",
         "<b>PHP</b>, <b>drupal</b>, <b>MySql</b>, <b>Elm</b>, <b>jQuery</b>, <b>AngularJS</b>, <b>Bootstrap</b>"
       ]
@@ -101,7 +120,6 @@
     },
     {
       "place": "Fairmas",
-      "subtitle": "SaaS company for hotel chains management",
       "when": {
         "from": {
           "month": 6,
@@ -112,11 +130,11 @@
           "year": 2011
         }
       },
-      "where": "Germany",
+      "where": "Berlin",
       "role": "PHP programmer",
       "description": [
         "Worked on an hotels financial performance comparison system, built with a proprietary MVC framework.",
-        "Co-designed and built an xml configuration system that allowed to program new reports easily. Also created the UI and backend for scheduling reports to be emailed automatically.",
+        "Built a configuration system that allowed to program new reports easily. Also created the UI and backend for scheduling reports to be emailed automatically.",
         "<b>PHP</b>, <b>MySql</b>, <b>Javascript</b>"
       ]
     }
@@ -132,7 +150,6 @@
           "year": 2016
         }
       },
-      "where": "Israel",
       "description": ["Studies towards B.A. in Cognitive and Computer Sciences"]
     }
   ],
@@ -147,10 +164,9 @@
       "Bootstrap",
       "Git",
       "Linux",
-      "PHP (OO)",
+      "PHP",
       "C",
-      "MySQL",
-      "Drupal"
+      "MySQL"
     ],
     "intermediate": ["Node.js", "express", "Apache", "Jenkins"]
   },
